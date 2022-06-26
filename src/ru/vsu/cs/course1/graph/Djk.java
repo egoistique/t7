@@ -11,7 +11,10 @@ public class Djk {
 //    время в пути или же стоимость поездки. В связи с этим веса добавляемых рѐбер не зависят
 //    от взаимного расположения узлов, но они не могут быть меньше нуля.
     public static void main(String[] args) {
+        runner();
+    }
 
+    public static void runner(){
         int n = 20;
         int k = 2; //кол во доп дорог
         int dopLength = 9; // длина доп дорог
@@ -38,20 +41,15 @@ public class Djk {
 
         System.out.println("Без доп дорог: " + hasCity(distancies, n));
 
-        //output(MatrixVeight);
-//        System.out.println("dops");
-//        output(dopMatrixHistory);
         if (!hasCity(distancies, n)) {
             System.out.println("С доп дорогами: " + buildDop(dopMatrixVeight, dopMatrixHistory, k, dopLength, n));
         }
-
-
     }
 
     //строим доп дороги
     public static boolean buildDop(int[][] MatrixVeight, int[][] MatrixHistory, int k, int dopLength, int n) {
         int planRoads = 0;
-        boolean findCity = false;
+        boolean findCity;
         while (planRoads <= k) {
             int[][] newMatrixRoads = copyArr(MatrixVeight);
             int[][] newMatrixHistory = copyArr(MatrixHistory);
@@ -65,24 +63,32 @@ public class Djk {
     }
 
     public static boolean checkCityWithDopRoads(int[][] newMatrixRoads, int[][] newMatrixHistory, int currNumOfDopRoads, int k, int n, int dopLength) {
-        boolean result = false;
+        boolean result;
         if (currNumOfDopRoads == k) {
-            int[][] roads = copyArr(newMatrixRoads);
-            int[][] history = copyArr(newMatrixHistory);
-            return hasCity(floyd(roads, history), n);
+//            int[][] roads = copyArr(newMatrixRoads);
+//            int[][] history = copyArr(newMatrixHistory);
+            return hasCity(floyd(newMatrixRoads, newMatrixHistory), n);
         } else {
             for (int i = 0; i < newMatrixRoads.length; i++) {
                 for (int j = 0; j < newMatrixRoads.length; j++) {
                     if (i != j && newMatrixHistory[i][j] == 0) {
                         int old = newMatrixRoads[i][j];
                         newMatrixRoads[i][j] = dopLength;
+                        newMatrixRoads[j][i] = dopLength;
                         newMatrixHistory[i][j] = j + 1;
                         result = checkCityWithDopRoads(newMatrixRoads, newMatrixHistory, currNumOfDopRoads + 1, k, n, dopLength);
                         if (result) {
+                            System.out.println("Новая матрица достижимости с доп дорогами");
+                            output(newMatrixRoads);
+                            System.out.println("Расстояния для матрицы с доп дорогами");
+                            int[][] dist = floyd(newMatrixRoads, newMatrixHistory);
+                            output(dist);
                             return true;
                         } else { //если в строке сделали k дорог, то прошлые значения вернули в первоначальное состояние
                             newMatrixRoads[i][j] = old;
+                            newMatrixRoads[j][i] = old;
                             newMatrixHistory[i][j] = 0;
+                            newMatrixHistory[j][i] = 0;
                         }
                     }
                 }

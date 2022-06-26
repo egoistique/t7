@@ -6,22 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0f30c31-7042-41d8-8fa8-a81744b8b657" name="Default Changelist" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Djk.java" afterDir="false" />
+    <list default="true" id="d0f30c31-7042-41d8-8fa8-a81744b8b657" name="Default Changelist" comment="task8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex1.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex1m.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1m.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex1m.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1m.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex2.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex3.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex4.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex4.1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex4.2.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/output/ex4.2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/SolveTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/SolveTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$SvgPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$SvgPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Djk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Djk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="162" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../s2_t5-master/s2_t5-master" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -130,7 +123,7 @@
       <workItem from="1653478757899" duration="937000" />
       <workItem from="1656150173435" duration="3196000" />
       <workItem from="1656227684955" duration="16293000" />
-      <workItem from="1656250828460" duration="1655000" />
+      <workItem from="1656250828460" duration="8779000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1622212057858</created>
@@ -146,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622786210980</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task8">
+      <created>1656272718720</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656272718720</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="task8" />
+    <option name="LAST_COMMIT_MESSAGE" value="task8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
