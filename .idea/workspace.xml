@@ -7,18 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0f30c31-7042-41d8-8fa8-a81744b8b657" name="Default Changelist" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/src/com/company11/demo1/GraphDemoFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/SolveTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/guru_nidi_graphviz_java_0_14_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/guru_nidi_graphviz_java_0_14_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Djk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/GraphAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/GraphAlgorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/GraphUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex1.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex1m.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1m.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex1m.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex1m.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex2.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex3.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex4.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex4.1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex4.2.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/ex4.2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/files/output/ex4.2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/SolveTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/SolveTask.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +74,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="Djk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.course1.graph.Djk" />
+      <module name="GraphSamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.vsu.cs.course1.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.course1.graph.demo.Program" />
       <module name="GraphSamples" />
@@ -93,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Djk" />
         <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
@@ -110,6 +127,10 @@
       <updated>1587301851859</updated>
       <workItem from="1653472991989" duration="5661000" />
       <workItem from="1653478714097" duration="26000" />
+      <workItem from="1653478757899" duration="937000" />
+      <workItem from="1656150173435" duration="3196000" />
+      <workItem from="1656227684955" duration="16293000" />
+      <workItem from="1656250828460" duration="1655000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1622212057858</created>
