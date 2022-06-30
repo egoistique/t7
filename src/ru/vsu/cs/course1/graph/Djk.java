@@ -1,6 +1,9 @@
 package ru.vsu.cs.course1.graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
+import java.util.function.Consumer;
 
 public class Djk {
     //    Вариант 11. Достижимость за N.
@@ -62,8 +65,25 @@ public class Djk {
         return false;
     }
 
+    public static int[][] toMatr(WeightedGraph gr){
+        int[][] matr = new int[gr.vertexCount()][gr.vertexCount()];
+        for (int i = 0; i < gr.vertexCount(); i++){
+            for (int j = 0; j < gr.vertexCount(); j++){
+                matr[i][j] = 99;
+            }
+        }
+        for (int i = 0; i < gr.vertexCount(); i++) {
+            for (WeightedGraph.WeightedEdgeTo wet : gr.adjacenciesWithWeights(i)) {
+                matr[i][wet.to()] = (int) wet.weight();
+            }
+        }
+
+        return matr;
+    }
+
     public static boolean checkCityWithDopRoads(int[][] newMatrixRoads, int[][] newMatrixHistory, int currNumOfDopRoads, int k, int n, int dopLength) {
         boolean result;
+
         if (currNumOfDopRoads == k) {
 //            int[][] roads = copyArr(newMatrixRoads);
 //            int[][] history = copyArr(newMatrixHistory);
@@ -71,18 +91,17 @@ public class Djk {
         } else {
             for (int i = 0; i < newMatrixRoads.length; i++) {
                 for (int j = 0; j < newMatrixRoads.length; j++) {
-                    if (i != j && newMatrixHistory[i][j] == 0) {
+                    if (i != j && newMatrixHistory[i][j] == 0) {//для каждых двух разных городов
                         int old = newMatrixRoads[i][j];
-                        newMatrixRoads[i][j] = dopLength;
+                        newMatrixRoads[i][j] = dopLength; //строим дорогоу
                         newMatrixRoads[j][i] = dopLength;
                         newMatrixHistory[i][j] = j + 1;
                         result = checkCityWithDopRoads(newMatrixRoads, newMatrixHistory, currNumOfDopRoads + 1, k, n, dopLength);
                         if (result) {
-                            System.out.println("Новая матрица достижимости с доп дорогами");
-                            output(newMatrixRoads);
                             System.out.println("Расстояния для матрицы с доп дорогами");
                             int[][] dist = floyd(newMatrixRoads, newMatrixHistory);
                             output(dist);
+                            System.out.println("Дороги построены между вершинами: " + i + " и " + j);
                             return true;
                         } else { //если в строке сделали k дорог, то прошлые значения вернули в первоначальное состояние
                             newMatrixRoads[i][j] = old;

@@ -75,7 +75,11 @@ public class GraphUtils {
             vertexCount = scanner.nextInt();
             int edgeCount = scanner.nextInt();
             for (int i = 0; i < edgeCount; i++) {
-                graph.addAdge(scanner.nextInt(), scanner.nextInt());
+                if (graph instanceof WeightedGraph) {
+                    ((WeightedGraph) graph).addAdge(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
+                } else {
+                    graph.addAdge(scanner.nextInt(), scanner.nextInt());
+                }
             }
         } else {
             Scanner scanner = new Scanner(str);
@@ -114,9 +118,16 @@ public class GraphUtils {
         sb.append(isDigraph ? "digraph" : "strict graph").append(" {").append(nl);
         for (int v1 = 0; v1 < graph.vertexCount(); v1++) {
             int count = 0;
-            for (Integer v2 : graph.adjacencies(v1)) {
-                sb.append(String.format("  %d %s %d", v1, (isDigraph ? "->" : "--"), v2)).append(nl);
-                count++;
+            if (graph instanceof WeightedGraph) {
+                for (WeightedGraph.WeightedEdgeTo v2 : ((WeightedGraph) graph).adjacenciesWithWeights(v1)) {
+                    sb.append(String.format("  %d %s %d [ label=\"%.2f\" ]", v1, (isDigraph ? "->" : "--"), v2.to(), v2.weight())).append(nl);
+                    count++;
+                }
+            } else {
+                for (Integer v2 : graph.adjacencies(v1)) {
+                    sb.append(String.format("  %d %s %d", v1, (isDigraph ? "->" : "--"), v2)).append(nl);
+                    count++;
+                }
             }
             if (count == 0) {
                 sb.append(v1).append(nl);

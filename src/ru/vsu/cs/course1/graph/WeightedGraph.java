@@ -27,7 +27,7 @@ public interface WeightedGraph extends Graph {
      * @param v Номер вершины, смежные с которой необходимо найти
      * @return Объект, поддерживающий итерацию по номерам связанных с v вершин
      */
-    Iterable<WeightedEdgeTo> adjacenciesWithWeights(int v);
+    Iterable<? extends WeightedEdgeTo> adjacenciesWithWeights(int v);
 
     /**
      * Вес ребра между вершинами v1 и v2

@@ -7,12 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0f30c31-7042-41d8-8fa8-a81744b8b657" name="Default Changelist" comment="task8">
+      <change afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/AdjListsWeightGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/WeightedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/WeightedGraph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$SvgPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame$SvgPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphSamples/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/GraphSamples/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/GraphSamples/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Djk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/Djk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/GraphUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/WeightedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/course1/graph/demo/GraphDemoFrame.java" afterDir="false" />
     </list>
@@ -48,8 +54,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="162" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="365" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../s2_t5-master/s2_t5-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -124,6 +131,8 @@
       <workItem from="1656150173435" duration="3196000" />
       <workItem from="1656227684955" duration="16293000" />
       <workItem from="1656250828460" duration="8779000" />
+      <workItem from="1656281377810" duration="1037000" />
+      <workItem from="1656314847802" duration="7259000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1622212057858</created>
@@ -162,6 +171,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />

@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="779" height="690"/>
+      <xy x="20" y="20" width="874" height="690"/>
     </constraints>
     <properties>
       <inheritsPopupMenu value="true"/>
@@ -122,7 +122,7 @@
                           <grid id="98060" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                             <margin top="0" left="0" bottom="0" right="0"/>
                             <constraints>
-                              <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
                             <properties/>
                             <border type="none"/>
@@ -137,6 +137,8 @@
                                     <item value="Н-граф (AdjListsGraph)"/>
                                     <item value="Орграф (AdjMatrixDigraph)"/>
                                     <item value="Орграф (AdjListsDigraph)"/>
+                                    <item value="Взвешенный н-граф (AdjListsWeightGraph)"/>
+                                    <item value="Взвешенный орграф (AdjListsWeightDigraph)"/>
                                   </model>
                                 </properties>
                               </component>
@@ -156,7 +158,7 @@
                               <grid id="eb8a1" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                 <margin top="0" left="0" bottom="0" right="0"/>
                                 <constraints>
-                                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                                  <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties/>
                                 <border type="none"/>
@@ -180,7 +182,7 @@
                               </grid>
                               <component id="f0fed" class="javax.swing.JButton" binding="countButton">
                                 <constraints>
-                                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties>
                                   <text value="Посчитать циклы"/>
@@ -188,18 +190,10 @@
                               </component>
                               <component id="6ca38" class="javax.swing.JLabel">
                                 <constraints>
-                                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties>
                                   <text value="Введите число вершин"/>
-                                </properties>
-                              </component>
-                              <component id="d30ed" class="javax.swing.JButton" binding="buttonCity">
-                                <constraints>
-                                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                                </constraints>
-                                <properties>
-                                  <text value="Проверить города"/>
                                 </properties>
                               </component>
                             </children>
@@ -207,7 +201,7 @@
                           <grid id="274d9" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                             <margin top="0" left="0" bottom="0" right="0"/>
                             <constraints>
-                              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                              <grid row="5" column="0" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
                             <properties/>
                             <border type="none" title="Обходы (поиск)"/>
@@ -307,7 +301,7 @@
                           </grid>
                           <scrollpane id="cd5c4" binding="ScrollList">
                             <constraints>
-                              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
                             <properties/>
                             <border type="none"/>
@@ -360,14 +354,6 @@
                               <text value="Введите к-во доп. дорог"/>
                             </properties>
                           </component>
-                          <component id="1c937" class="javax.swing.JLabel">
-                            <constraints>
-                              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                            </constraints>
-                            <properties>
-                              <text value="Введите длину доп. дорог"/>
-                            </properties>
-                          </component>
                           <component id="24769" class="javax.swing.JTextArea" binding="textAreaN">
                             <constraints>
                               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -376,13 +362,21 @@
                             </constraints>
                             <properties/>
                           </component>
-                          <component id="929c5" class="javax.swing.JTextArea" binding="textAreaK">
+                          <component id="d30ed" class="javax.swing.JButton" binding="buttonCity">
                             <constraints>
-                              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                                <preferred-size width="150" height="50"/>
-                              </grid>
+                              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                             </constraints>
-                            <properties/>
+                            <properties>
+                              <text value="Проверить города"/>
+                            </properties>
+                          </component>
+                          <component id="1c937" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Введите длину доп. дорог"/>
+                            </properties>
                           </component>
                           <component id="6b6d9" class="javax.swing.JTextArea" binding="textAreaDopLength">
                             <constraints>
@@ -392,9 +386,9 @@
                             </constraints>
                             <properties/>
                           </component>
-                          <component id="5f9dd" class="javax.swing.JTextArea" binding="textAreaAnswer">
+                          <component id="929c5" class="javax.swing.JTextArea" binding="textAreaK">
                             <constraints>
-                              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                                 <preferred-size width="150" height="50"/>
                               </grid>
                             </constraints>
